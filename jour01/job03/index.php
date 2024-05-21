@@ -10,9 +10,9 @@ echo "
 <table border='1'>
     <thaed>
         <tr>
-        <th>type </>
-        <th>name </>
-        <th>value</>
+        <th>type </th>
+        <th>name </th>
+        <th>value</th>
         
         </tr>
     </thaed>    
