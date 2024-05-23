@@ -1,18 +1,25 @@
-<?php
-$hauteur = 5; // Hauteur du triangle (modifiable)
 
-// Boucle pour chaque ligne du triangle
+
+<?php
+// Définition de la hauteur du triangle
+$hauteur = 5;
+
+// Boucle pour afficher les lignes du triangle
 for ($i = 1; $i <= $hauteur; $i++) {
-    // Afficher les espaces avant les étoiles
+    // Boucle pour afficher les espaces avant les étoiles
     for ($j = 1; $j <= $hauteur - $i; $j++) {
-        echo "&nbsp;"; // Entité HTML pour un espace
+        echo "&nbsp;"; // Afficher un espace insécable
     }
-    
-    // Afficher les étoiles
-    for ($k = 1; $k <= 2 * $i - 1; $k++) {
-        echo "*";
+
+    // Boucle pour afficher les étoiles dans chaque ligne
+    for ($k = 1; $k <= ($i * 2) - 1; $k++) {
+        if ($k == 1 || $k == ($i * 2) - 1) {
+            echo "*"; // Afficher une étoile pour le contour
+        } else {
+            echo "&nbsp;"; // Afficher un espace insécable pour l'intérieur
+        }
     }
-    
-    echo "<br>"; // Retour à la ligne
+
+    echo "<br />";
 }
 ?>
