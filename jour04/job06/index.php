@@ -26,7 +26,7 @@
 
     <h2>Vérifier si un nombre est pair ou impair</h2>
     <form method="get" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>">
-        Entrez un nombre: <input type="text" name="nombre"><br>
+        Entrez un nombre: <input type="number" name="nombre"><br>
         <input type="submit" name="submit" value="Vérifier">
     </form>
 
